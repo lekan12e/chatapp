@@ -231,8 +231,7 @@ const Settings = () => {
 
           <div
             onClick={() => setavatarForm(!avatarForm)}
-            className="absolute left-[63%] bottom-[63%] cursor-pointer bg-green-400 rounded-full p-1"
-          >
+            className="absolute left-[63%] bottom-[63%] cursor-pointer bg-green-400 rounded-full p-1">
             <IoMdCreate className=" text-white" />
           </div>
         </div>
@@ -246,8 +245,7 @@ const Settings = () => {
         {checkUpdate() && (
           <button
             className="text-white bg-green-600 rounded-md px-4 py-1"
-            onClick={() => saveAvatar()}
-          >
+            onClick={() => saveAvatar()}>
             Save avatar
           </button>
         )}
@@ -256,7 +254,7 @@ const Settings = () => {
           <h4 className="text-gray-600 text-medium">Personal Info</h4>
 
           <div className="SettingSecContent">
-            <EditInfo field="email" value="dayveed@gmail.com" />
+            <EditInfo field="email" value={userDetails.email} />
             <EditInfo
               field="username"
               value={userForm.username}
@@ -265,8 +263,7 @@ const Settings = () => {
             />
             <button
               onClick={() => setchangePassword(!changePassword)}
-              className="px-3 py-1 bg-green-200 text-green-600 rounded-md text-sm"
-            >
+              className="px-3 py-1 bg-green-200 text-green-600 rounded-md text-sm">
               Change Password
             </button>
 
@@ -296,8 +293,7 @@ const Settings = () => {
                 ) : (
                   <button
                     onClick={() => updatePassword()}
-                    className="text-white w-max bg-green-700 rounded-md px-4 py-1"
-                  >
+                    className="text-white w-max bg-green-700 rounded-md px-4 py-1">
                     Save
                   </button>
                 )}
@@ -313,8 +309,7 @@ const Settings = () => {
         {userForm.username !== userDetails?.username && (
           <button
             onClick={() => updateUsername()}
-            className="text-sm text-white w-max bg-green-700 rounded-md px-4 py-1"
-          >
+            className="text-sm text-white w-max bg-green-700 rounded-md px-4 py-1">
             Update username
           </button>
         )}
@@ -322,8 +317,7 @@ const Settings = () => {
         <div className="SettingSec">
           <button
             onClick={() => handleLogout()}
-            className="px-3 py-1 bg-red-500 text-white rounded-md text-sm"
-          >
+            className="px-3 py-1 bg-red-500 text-white rounded-md text-sm">
             Logout
           </button>
         </div>
