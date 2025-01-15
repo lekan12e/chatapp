@@ -107,8 +107,7 @@ const Auth = () => {
 
       <form
         onSubmit={handleAuth}
-        className="bg-green-500 flex-grow p-5 flex flex-col items-center"
-      >
+        className="bg-green-500 flex-grow p-5 flex flex-col items-center">
         <h3 className="text-xl text-green-100 mt-8">
           {router.query.type === "login" ? "Login" : "Sign Up"}
         </h3>
@@ -172,8 +171,7 @@ const Auth = () => {
         ) : (
           <button
             onClick={handleAuth}
-            className="rounded-xl py-2 text-lg shadow-md w-full max-w-lg bg-white text-green-600"
-          >
+            className="rounded-xl py-2 text-lg shadow-md w-full max-w-lg bg-white text-green-600">
             {router.query.type === "login" ? "Login" : "Sign Up"}
           </button>
         )}
@@ -188,8 +186,7 @@ const Auth = () => {
           </h3>
           <h2
             onClick={() => handleNavigate()}
-            className="hover:underline text-green-200 cursor-pointer"
-          >
+            className="hover:underline text-green-200 cursor-pointer">
             {router.query.type === "login" ? "Register" : "Login"}
           </h2>
         </div>
@@ -198,10 +195,10 @@ const Auth = () => {
       <div className="hidden md:flex w-2/4 flex-col items-center justify-center space-y-4">
         <div className="flex items-center space-x-2">
           <img src="/chat-logo.png" alt="chat logo" className="h-10" />
-          <h2 className="font-semibold text-3xl text-green-900">DayChat</h2>
+          <h2 className="font-semibold text-3xl text-green-900">LakesChat</h2>
         </div>
 
-        <img src="/daychatIllustration.svg" alt="illustration" />
+        <img src="/lakechatIllustration.svg" alt="illustration" />
       </div>
     </div>
   );
